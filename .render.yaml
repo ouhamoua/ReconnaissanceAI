@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mon-service  # nom de ton service dans Render
+    env: python
+    pythonVersion: 3.10
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py  # ou la commande pour lancer ton app
